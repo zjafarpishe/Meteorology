@@ -1,0 +1,301 @@
+:root {
+    --color-primary: #4d0de5;
+    --color-secondary: #7da1f7;
+    --color-warning: #fae362;
+    --color-error: #f75e4b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .search div {
+        width: 100vw;
+        max-width: 900px;
+        padding: 120px 0;
+        background-color: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+
+    }
+
+    .currentWeather .boxCurrentWeather {
+        width: 75vw;
+        max-width: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+    }
+
+    .currentWeather {
+        margin-top: -15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .forcastWeather .forcastboxes {
+        margin-top: 2rem;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 20px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .search div {
+        width: 80vw;
+        max-width: 900px;
+        padding: 120px 0;
+        background-color: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+
+    }
+
+    .currentWeather .boxCurrentWeather {
+        width: 75vw;
+        max-width: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+    }
+
+    .currentWeather {
+        margin-top: -7%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .forcastWeather .forcastboxes {
+        margin-top: 2rem;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .search div {
+        width: 70vw;
+        max-width: 900px;
+        padding: 120px 0;
+        background-color: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+
+    }
+
+    .currentWeather {
+        margin-top: -5%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .currentWeather .boxCurrentWeather {
+        width: 25vw;
+        max-width: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+    }
+
+
+
+    .forcastWeather .forcastboxes {
+        margin-top: 2rem;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 20px;
+    }
+
+}
+
+.search {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+}
+
+/* .search div {
+    width: 70vw;
+    max-width: 900px;
+    padding: 120px 0;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+
+} */
+
+.search input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.search button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    background-color: var(--color-warning);
+
+}
+
+/* .currentWeather {
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* .currentWeather .boxCurrentWeather {
+    width: 25vw;
+    max-width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+} */
+
+.boxCurrentWeather .city {
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boxCurrentWeather .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxCurrentWeather span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.forcastWeather {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+
+/* .forcastWeather .forcastboxes {
+    margin-top: 2rem;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+} */
+
+.forcastboxes .box {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+}
+
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(105, 105, 105, 0.699);
+    top: 0;
+    left: 0;
+
+}
+
+.modal .box {
+    background-color: white;
+    padding: 10px 20px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.633);
+    border: 1px solid black;
+    border-radius: 5px;
+
+
+}
+
+.modal .box button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    max-width: 20px;
+}
+
+
+.modal .box span {
+    color: rgb(155, 0, 0);
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
